@@ -4,6 +4,7 @@ var express = require('express'),
 	app = express(),
 	bodyParser = require('body-parser'),
 	morgan = require('morgan'),
+	compression = require('compression'),
 	mongoose = require('./config/mongoose.js'),
 	db = mongoose()
 
