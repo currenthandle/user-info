@@ -11,7 +11,7 @@ var express = require('express'),
 	if(process.env.NODE_ENV === 'development'){
 		app.use(morgan('dev'))
 	} else {
-		app.use(compression())	
+		//app.use(compression())	
 	}
 app.use(express.static(__dirname + '/public'))
 
